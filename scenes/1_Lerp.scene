@@ -1,0 +1,87 @@
+{
+  "Id": "8f78c6c4-92bf-48db-a4a3-4de255e1e3eb",
+  "GameObjects": [
+    {
+      "Id": "32279786-4877-434e-a749-b99e94beba3e",
+      "Name": "Main Camera",
+      "Position": "-300,0,100",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "CameraComponent",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 120,
+          "IsMainCamera": true,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ]
+    },
+    {
+      "Id": "8ee557d6-cede-4469-b1b7-0b5b12909863",
+      "Name": "Directional Light",
+      "Position": "0,0,200",
+      "Rotation": "-0.5099577,0.3913044,-0.09998879,0.7594909",
+      "Tags": "light_directional,light",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "DirectionalLight",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.91373,0.98039,1,1",
+          "Shadows": true,
+          "SkyColor": "0.05882,0.07451,0.08235,1"
+        }
+      ]
+    },
+    {
+      "Id": "b71613d1-faa3-4325-85f1-c0c9a973e643",
+      "Name": "Spawner",
+      "Position": "0,0,182.384",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "LerpSpawner",
+          "prefab": {
+            "_type": "gameobject",
+            "prefab": "prefabs/lerp.prefab"
+          }
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "Lerping": true,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "1_lerp",
+  "Description": "",
+  "LastSaved": "2024-02-21T22:55:47.0366509\u002B07:00",
+  "__references": []
+}
